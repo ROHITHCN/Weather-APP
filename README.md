@@ -3,10 +3,6 @@
 ## Overview
 Weather-APP is a real-time data processing system designed to monitor weather conditions across major Indian metros and deliver summarized insights using rollups and aggregates. This system pulls weather data from the OpenWeatherMap API, providing daily summaries, alerting capabilities, and insightful visualizations to keep users informed of weather trends.
 
-## Live Demo
-
-You can access the live version of this project [here](https://juspay-saas-dashboard.netlify.app/).
-
 ## Features
 
 - Real-Time Weather Monitoring:
@@ -97,3 +93,52 @@ Database: Weather data, including daily summaries, is stored persistently using 
 Email Notifications: Alerts and notifications are sent via email using Nodemailer, a Node.js module for sending emails.
 
 MailTrap: for mail notofications and testing
+
+
+## Getting Started
+
+### Prerequisites
+
+- **Node.js**: Make sure you have Node.js installed (version >= 14.0.0).
+- **npm : Package manager to install dependencies.
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/ROHITHCN/weather-app.git
+   ```
+2. Install frontend dependencies:
+
+   ```bash
+   cd Weather-APP/frontend
+   npm install
+   npm install react-toastify react-icons
+   npm run
+   ```
+3. Install backend dependencies:
+    ```bash
+    cd Weather-APP/backend
+    npm install express dotenv nodemailer axios cors luxon zod nodemon
+    ```
+4. Create a .env file and add
+   ```bash
+   npm start
+   MONGO_URI=mongo_db_connection_string
+   OPENWEATHERMAP_KEY=openweathermap_api_key
+   PORT=port_number
+   MAILTRAP_HOST=sandbox.smtp.mailtrap.io
+   MAILTRAP_PORT=25
+   MAILTRAP_USER=mailtrap_userid
+   MAILTRAP_PASS=mailtrap_password
+   ```
+5. Run backend app
+   ```bash
+   node server.js
+   ```
+
+Thanks you
+have a nice day
+for suggestions and doubts do contact me:
+rohithcnkumar@gmail.com
